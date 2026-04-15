@@ -31,7 +31,7 @@ export default function BeforeAfter() {
           ref={ref}
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ type: "spring", stiffness: 80, damping: 20 }}
+          transition={{ type: "spring" as const, stiffness: 80, damping: 20 }}
         >
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
             <div>

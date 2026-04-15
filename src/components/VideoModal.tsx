@@ -74,7 +74,7 @@ export default function VideoModal({ isOpen, onClose }: VideoModalProps) {
             initial={{ opacity: 0, scale: 0.95, y: 16 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 16 }}
-            transition={{ type: "spring", stiffness: 300, damping: 30 }}
+            transition={{ type: "spring" as const, stiffness: 300, damping: 30 }}
             className="relative w-full max-w-4xl rounded-2xl overflow-hidden bg-zinc-950 shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >

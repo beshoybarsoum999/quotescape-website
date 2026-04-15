@@ -144,7 +144,7 @@ function FeatureCard({
       initial={{ opacity: 0, y: 30 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{
-        type: "spring",
+        type: "spring" as const,
         stiffness: 80,
         damping: 20,
         delay: index * 0.08,

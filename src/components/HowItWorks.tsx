@@ -82,27 +82,38 @@ const features = [
   },
 ];
 
+type FeatureItem = {
+  title: string;
+  description: string;
+  image: string;
+  tags: string[];
+  variant: "dark" | "light";
+  badge: string;
+  darkTitle: string;
+  darkTitleHighlight: string;
+  darkTags: string[];
+};
+
 function FeatureCard({
   feature,
   index,
 }: {
-  feature: (typeof features)[0];
+  feature: FeatureItem;
   index: number;
 }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-80px" });
   const isReversed = index % 2 !== 0;
-  const isDark = "variant" in feature && feature.variant === "dark";
-  const isLight = "variant" in feature && feature.variant === "light";
+  const isDark = feature.variant === "dark";
+  const isLight = feature.variant === "light";
 
-  if ((isDark || isLight) && "darkTitle" in feature) {
-    return (
+  return (
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 50 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{
-          type: "spring",
+          type: "spring" as const,
           stiffness: 60,
           damping: 20,
           delay: 0.1,
@@ -190,92 +201,6 @@ function FeatureCard({
         </div>
       </motion.div>
     );
-  }
-
-  return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 50 }}
-      animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{
-        type: "spring",
-        stiffness: 60,
-        damping: 20,
-        delay: 0.1,
-      }}
-      className="rounded-[1.5rem] border border-zinc-200/70 bg-white/80 backdrop-blur-sm shadow-[0_2px_20px_-6px_rgba(0,0,0,0.06)] overflow-hidden"
-    >
-      <div
-        className={`grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch ${
-          isReversed ? "md:[direction:rtl]" : ""
-        }`}
-      >
-        {/* Text side */}
-        <div
-          className={`p-8 md:p-12 lg:p-14 flex flex-col justify-center ${
-            isReversed ? "md:[direction:ltr]" : ""
-          }`}
-        >
-          <h3 className="text-2xl md:text-3xl font-bold tracking-tight text-zinc-900 mb-4">
-            {feature.title}
-          </h3>
-          <p
-            className="text-sm md:text-base text-zinc-500 leading-relaxed mb-8"
-            dangerouslySetInnerHTML={{ __html: feature.description }}
-          />
-          <div className="flex flex-wrap gap-2">
-            {feature.tags.map((tag) => (
-              <span
-                key={tag}
-                className="inline-flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-widest text-zinc-500 px-3 py-1.5 rounded-full border border-zinc-200 bg-zinc-50/80"
-              >
-                <svg
-                  width="12"
-                  height="12"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  className="text-zinc-400 flex-shrink-0"
-                >
-                  <circle
-                    cx="12"
-                    cy="12"
-                    r="10"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  />
-                  <path
-                    d="M8 12l3 3 5-5"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-                {tag}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        {/* Image side */}
-        <div
-          className={`relative min-h-[300px] md:min-h-[420px] bg-zinc-100 ${
-            isReversed ? "md:[direction:ltr]" : ""
-          }`}
-        >
-          <div className="absolute inset-3 md:inset-5 rounded-xl overflow-hidden border border-zinc-200/50 shadow-lg bg-white">
-            <Image
-              src={feature.image}
-              alt={feature.title}
-              fill
-              className="object-cover object-top"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
-        </div>
-      </div>
-    </motion.div>
-  );
 }
 
 export default function HowItWorks() {

@@ -133,7 +133,7 @@ export default function ROICalculator() {
           initial={{ opacity: 0, y: 32 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
-          transition={{ type: "spring", stiffness: 80, damping: 18 }}
+          transition={{ type: "spring" as const, stiffness: 80, damping: 18 }}
           className="rounded-2xl overflow-hidden"
           style={{
             background:
@@ -246,7 +246,7 @@ export default function ROICalculator() {
                   key={`${revenueLost}-${period}`}
                   initial={{ opacity: 0, scale: 0.92 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  transition={{ type: "spring", stiffness: 200, damping: 20 }}
+                  transition={{ type: "spring" as const, stiffness: 200, damping: 20 }}
                   className="text-4xl md:text-5xl font-extrabold tabular-nums leading-none mb-2"
                   style={{ color: "#00e676" }}
                 >

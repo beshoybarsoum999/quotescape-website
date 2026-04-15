@@ -14,7 +14,7 @@ export default function CTASection() {
         ref={ref}
         initial={{ opacity: 0, y: 30 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ type: "spring", stiffness: 80, damping: 20 }}
+        transition={{ type: "spring" as const, stiffness: 80, damping: 20 }}
         className="max-w-[1200px] mx-auto bg-zinc-900 rounded-3xl overflow-hidden relative"
       >
         {/* Subtle gradient overlay */}

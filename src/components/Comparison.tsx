@@ -143,7 +143,7 @@ export default function Comparison() {
               className="mt-8 block w-full text-center py-3.5 rounded-full bg-[#D4E157] text-zinc-900 font-semibold text-sm hover:bg-[#cddc39] transition-colors cursor-pointer"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              transition={{ type: "spring", stiffness: 400, damping: 15 }}
+              transition={{ type: "spring" as const, stiffness: 400, damping: 15 }}
             >
               Get Started
             </motion.a>

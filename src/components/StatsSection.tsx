@@ -75,7 +75,7 @@ export default function StatsSection() {
           ref={sectionRef}
           initial={{ opacity: 0, y: 30 }}
           animate={isSectionInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ type: "spring", stiffness: 80, damping: 20 }}
+          transition={{ type: "spring" as const, stiffness: 80, damping: 20 }}
         >
           <h2 className="text-3xl md:text-5xl font-semibold tracking-tighter text-zinc-900 leading-tight max-w-[22ch] mb-16 md:mb-20">
             Transform your sales process - Exceed expectations from the first
@@ -92,7 +92,7 @@ export default function StatsSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={areNumbersInView ? { opacity: 1, y: 0 } : {}}
                 transition={{
-                  type: "spring",
+                  type: "spring" as const,
                   stiffness: 80,
                   damping: 20,
                   delay: i * 0.12,

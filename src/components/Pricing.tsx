@@ -65,7 +65,7 @@ export default function Pricing() {
           ref={ref}
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ type: "spring", stiffness: 80, damping: 20 }}
+          transition={{ type: "spring" as const, stiffness: 80, damping: 20 }}
         >
           {/* Header */}
           <div className="text-center mb-10">
