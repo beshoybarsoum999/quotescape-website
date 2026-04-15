@@ -44,7 +44,7 @@ export default function WhoThisIsFor() {
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           className="mb-14"
         >
           <h2 className="text-3xl md:text-5xl font-semibold tracking-tighter text-zinc-900 max-w-[28ch]">

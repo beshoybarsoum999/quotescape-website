@@ -21,7 +21,7 @@ const AnimatedNumber = memo(function AnimatedNumber({
 
     const controls = animate(0, value, {
       duration: 2.2,
-      ease: [0.12, 0.6, 0.18, 1],
+      ease: "easeOut",
       onUpdate(v) {
         setDisplay(Math.round(v));
       },
