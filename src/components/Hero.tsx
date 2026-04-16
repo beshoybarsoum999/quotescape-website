@@ -116,11 +116,12 @@ export default function Hero() {
             className="hidden md:flex flex-shrink-0 items-center justify-end"
           >
             <div
-              className="overflow-hidden rounded-2xl shadow-2xl border border-zinc-200/60"
+              className="overflow-hidden rounded-2xl"
               style={{
                 aspectRatio: "9 / 16",
                 height: "min(72vh, 640px)",
-                boxShadow: "0 32px 64px -12px rgba(0,0,0,0.18), 0 0 0 1px rgba(0,0,0,0.04)",
+                border: "2px solid rgba(0,0,0,0.75)",
+                boxShadow: "0 32px 64px -12px rgba(0,0,0,0.22)",
               }}
             >
               <video
