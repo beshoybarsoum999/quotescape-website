@@ -54,7 +54,7 @@ export default function Footer() {
                 amelia@quote-scape.com
               </a>
               <a
-                href="tel:+17167079588"
+                href="tel:+18322815930"
                 className="flex items-center gap-2 text-sm text-zinc-400 hover:text-white transition-colors"
               >
                 <svg
@@ -69,7 +69,7 @@ export default function Footer() {
                 >
                   <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
                 </svg>
-                +1 716-707-9588
+                +1 832-281-5930
               </a>
             </div>
 
@@ -81,7 +81,9 @@ export default function Footer() {
               <div className="flex items-center gap-3">
                 {/* Instagram */}
                 <a
-                  href="#"
+                  href="https://www.instagram.com/quotescape.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-9 h-9 rounded-lg border border-zinc-700/60 flex items-center justify-center text-zinc-400 hover:text-white hover:border-zinc-500 transition-colors"
                 >
                   <svg
@@ -101,7 +103,9 @@ export default function Footer() {
                 </a>
                 {/* Facebook */}
                 <a
-                  href="#"
+                  href="https://www.facebook.com/people/Quote-Scape/61573837121109/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-9 h-9 rounded-lg border border-zinc-700/60 flex items-center justify-center text-zinc-400 hover:text-white hover:border-zinc-500 transition-colors"
                 >
                   <svg

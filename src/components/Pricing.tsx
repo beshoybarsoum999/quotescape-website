@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import {
@@ -127,6 +128,7 @@ export default function Pricing() {
                   <span className="text-sm text-zinc-400">/month</span>
                 </div>
                 <p className="text-sm text-zinc-500 mt-2">5-Day Free Trial</p>
+                <p className="text-xs text-zinc-400 mt-1">Includes 2 Seats</p>
               </div>
               <div className="p-8">
                 <ul className="space-y-3.5 mb-8">
@@ -142,7 +144,9 @@ export default function Pricing() {
                   ))}
                 </ul>
                 <a
-                  href="#"
+                  href="https://app.quote-scape.com/sign-up"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-center w-full py-3.5 rounded-xl bg-zinc-900 text-white text-sm font-medium hover:bg-zinc-800 transition-all duration-200 active:scale-[0.98]"
                 >
                   Start Free Trial
@@ -171,19 +175,38 @@ export default function Pricing() {
               </div>
               <div className="p-8">
                 <ul className="space-y-3.5 mb-8">
-                  {proFeatures.map((f) => (
-                    <li key={f} className="flex items-start gap-3">
-                      <Check
-                        size={16}
-                        weight="bold"
-                        className="mt-0.5 flex-shrink-0 text-emerald-400"
-                      />
-                      <span className="text-sm text-zinc-300">{f}</span>
-                    </li>
+                  {proFeatures.map((f, i) => (
+                    <React.Fragment key={f}>
+                      {i === 7 && (
+                        <li className="pt-1 pb-0.5">
+                          <span
+                            className="text-sm font-bold italic"
+                            style={{
+                              backgroundImage: "linear-gradient(90deg, #1E40AF 0%, #60A5FA 100%)",
+                              WebkitBackgroundClip: "text",
+                              WebkitTextFillColor: "transparent",
+                              backgroundClip: "text",
+                            }}
+                          >
+                            In Pro
+                          </span>
+                        </li>
+                      )}
+                      <li className="flex items-start gap-3">
+                        <Check
+                          size={16}
+                          weight="bold"
+                          className="mt-0.5 flex-shrink-0 text-emerald-400"
+                        />
+                        <span className="text-sm text-zinc-300">{f}</span>
+                      </li>
+                    </React.Fragment>
                   ))}
                 </ul>
                 <a
-                  href="#"
+                  href="https://app.quote-scape.com/sign-up"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-center w-full py-3.5 rounded-xl text-sm font-medium transition-all duration-200 active:scale-[0.98] text-white"
                   style={{
                     backgroundImage:
@@ -203,7 +226,7 @@ export default function Pricing() {
                 </span>
                 <div className="flex items-baseline gap-1 mt-3">
                   <span className="text-5xl font-semibold tracking-tight text-zinc-900">
-                    $79
+                    $59
                   </span>
                   <span className="text-sm text-zinc-400">/Additional Seat</span>
                 </div>
@@ -222,7 +245,9 @@ export default function Pricing() {
                   ))}
                 </ul>
                 <a
-                  href="#"
+                  href="https://buy.stripe.com/fZu7sE98h8L9awp0nab7y09"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-center w-full py-3.5 rounded-xl bg-zinc-900 text-white text-sm font-medium hover:bg-zinc-800 transition-all duration-200 active:scale-[0.98]"
                 >
                   Add Users
