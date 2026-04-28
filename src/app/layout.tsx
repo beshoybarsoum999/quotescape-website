@@ -34,6 +34,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased`}
     >
       <head>
+        <link rel="icon" href="/favicon.png" type="image/png" />
         <link
           href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@200,300,400,500,600,700&display=swap"
           rel="stylesheet"

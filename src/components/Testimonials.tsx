@@ -87,7 +87,7 @@ function TestimonialCard({
       <div>
         <p className="text-sm font-medium text-zinc-900">{t.name}</p>
         <p className="text-xs text-zinc-400">
-          {t.title} &middot; {t.location}
+          {t.title.split(",")[0]} &middot; {t.location}
         </p>
       </div>
     </motion.div>
