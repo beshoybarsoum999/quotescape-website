@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  QuoteScape Sitemap
+  Generated for: https://www.quote-scape.com/
+  Strategy: Prioritizes commercial/vertical pages for high-intent contractor searches.
+  High-priority vertical pages (/roofing-visualizer, etc.) are RECOMMENDED new pages
+  that do not yet exist but should be created for topical SEO authority.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- ===================== HIGH PRIORITY — Core Commercial ===================== -->
+
+  <url>
+    <loc>https://www.quote-scape.com/</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <!-- Page Type: Commercial Landing | Schema: SoftwareApplication, Organization -->
+    <!-- Notes: Primary conversion page. Target: "on-site contractor visualization software" -->
+  </url>
+
+  <url>
+    <loc>https://www.quote-scape.com/pricing</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <!-- Page Type: Commercial — Pricing | Schema: Product, Offer -->
+    <!-- Notes: High commercial intent. Include ROI calculator data. -->
+  </url>
+
+  <url>
+    <loc>https://www.quote-scape.com/demo</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+    <!-- Page Type: Commercial — Demo Request | Schema: Event, ContactPage -->
+    <!-- Notes: Bottom-of-funnel. High converting. Link from all vertical pages. -->
+  </url>
+
+  <!-- ===================== HIGH PRIORITY — Vertical Pages (Create if not existing) ===================== -->
+
+  <url>
+    <loc>https://www.quote-scape.com/roofing-visualizer</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+    <!-- Page Type: Commercial — Vertical | Schema: SoftwareApplication, FAQPage -->
+    <!-- Notes: HIGHEST keyword opportunity. Target: "roofing visualizer for contractors", "roofing estimating software" -->
+  </url>
+
+  <url>
+    <loc>https://www.quote-scape.com/siding-visualizer</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <!-- Page Type: Commercial — Vertical | Schema: SoftwareApplication -->
+    <!-- Notes: Target: "siding visualizer contractor tool", "siding replacement visualization" -->
+  </url>
+
+  <url>
+    <loc>https://www.quote-scape.com/paving-visualizer</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <!-- Page Type: Commercial — Vertical | Schema: SoftwareApplication -->
+    <!-- Notes: Target: "paving mockup tool", "driveway visualizer contractor" -->
+  </url>
+
+  <url>
+    <loc>https://www.quote-scape.com/garage-door-visualizer</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <!-- Page Type: Commercial — Vertical | Schema: SoftwareApplication -->
+    <!-- Notes: Target: "garage door sales tool", "garage door visualizer for dealers" -->
+  </url>
+
+  <url>
+    <loc>https://www.quote-scape.com/landscaping-visualizer</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <!-- Page Type: Commercial — Vertical | Schema: SoftwareApplication -->
+    <!-- Notes: Target: "landscaping proposal software", "outdoor living visualizer" -->
+  </url>
+
+  <url>
+    <loc>https://www.quote-scape.com/window-visualizer</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+    <!-- Page Type: Commercial — Vertical | Schema: SoftwareApplication -->
+    <!-- Notes: Target: "window replacement visualizer", "window sales tool contractor" -->
+  </url>
+
+  <!-- ===================== HIGH PRIORITY — Feature Pages ===================== -->
+
+  <url>
+    <loc>https://www.quote-scape.com/proposal-generator</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+    <!-- Page Type: Commercial — Feature | Schema: SoftwareApplication -->
+    <!-- Notes: Target: "contractor proposal generator", "roofing proposal software", "instant contractor quotes" -->
+  </url>
+
+  <url>
+    <loc>https://www.quote-scape.com/features</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <!-- Page Type: Mid-Funnel — Feature Overview | Schema: ItemList -->
+    <!-- Notes: Hub for internal links to vertical and feature pages -->
+  </url>
+
+  <!-- ===================== MEDIUM PRIORITY — Supporting Pages ===================== -->
+
+  <url>
+    <loc>https://www.quote-scape.com/how-it-works</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+    <!-- Page Type: Informational — Product Explainer | Schema: HowTo -->
+    <!-- Notes: Target new contractors evaluating the tool. Good for AI overviews. -->
+  </url>
+
+  <url>
+    <loc>https://www.quote-scape.com/case-studies</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.68</priority>
+    <!-- Page Type: Informational — Social Proof | Schema: Review, ItemList -->
+    <!-- Notes: Expand testimonials into full case studies per trade vertical. High E-E-A-T signal. -->
+  </url>
+
+  <url>
+    <loc>https://www.quote-scape.com/integrations</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+    <!-- Page Type: Commercial — Technical | Schema: SoftwareApplication -->
+    <!-- Notes: Target: "contractor CRM integration", "roofing software integrations" -->
+  </url>
+
+  <url>
+    <loc>https://www.quote-scape.com/blog</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.60</priority>
+    <!-- Page Type: Informational — Content Hub -->
+    <!-- Notes: Only index if articles are 800+ words with original insight. Noindex thin/stub posts. -->
+  </url>
+
+  <!-- ===================== LOW PRIORITY / LEGAL ===================== -->
+
+  <url>
+    <loc>https://www.quote-scape.com/privacy-policy</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.20</priority>
+    <!-- Page Type: Legal -->
+  </url>
+
+  <url>
+    <loc>https://www.quote-scape.com/terms</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.20</priority>
+    <!-- Page Type: Legal -->
+  </url>
+
+</urlset>
